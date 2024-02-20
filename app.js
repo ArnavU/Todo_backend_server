@@ -17,7 +17,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(cors({
     // origin: [process.env.FRONTEND_URL],
-    origin: 'https://todo-app-frontend-xi.vercel.app',
+    origin: process.env.FRONTEND_URL.split(','),
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }))
