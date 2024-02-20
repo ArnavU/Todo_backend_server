@@ -17,7 +17,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(cors({
     // origin: [process.env.FRONTEND_URL],
-    origin: 'http://localhost:5173',
+    origin: 'https://todo-app-frontend-xi.vercel.app/',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }))
